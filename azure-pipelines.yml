@@ -10,9 +10,9 @@ pool: MiPool
 strategy:
   matrix:
     Python36:
-      python.version: '3.6'
-    Python37:
       python.version: '3.7'
+    Python37:
+      python.version: '3.11'
 
 steps:
 - task: UsePythonVersion@0
