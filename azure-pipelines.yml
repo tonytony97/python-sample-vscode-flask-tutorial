@@ -21,7 +21,9 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
+    python -m ensurepip
     python -m pip install --upgrade pip
+    pip install tox poetry
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
